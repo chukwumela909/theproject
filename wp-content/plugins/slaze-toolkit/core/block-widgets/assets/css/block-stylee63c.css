@@ -1,0 +1,203 @@
+.block-recent-post_item {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color-1);
+}
+
+.block-recent-post_item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.block-recent-post .post_item-image {
+  flex-shrink: 0;
+  max-width: 100px;
+  width: 100px;
+}
+
+.block-recent-post .post_item-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.block-recent-post .post_item-title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 0 10px 20px;
+}
+
+.block-recent-post .post_item-title h6 {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.block-recent-post .post_item-title h6 a {
+  color: var(--text-heading-color);
+  transition: 0.4s;
+}
+.block-recent-post .post_item-title h6 a:hover {
+  color: var(--primary-color-1);
+}
+
+.block-recent-post .post_item-title span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  line-height: 23px;
+}
+
+.block-recent-post .post_item-title span i {
+  color: var(--primary-color-1);
+}
+
+.sidebar_list_category ul {
+  padding: 0;
+  margin: 0;
+}
+.sidebar_list_category ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.sidebar_list_category ul li a {
+  display: block;
+  background: var(--bg-white);
+  transition: 0.4s;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 11px 20px;
+  border: 1px solid var(--border-color-1);
+  position: relative;
+  border-radius: 5px;
+  color: var(--body-color);
+}
+.sidebar_list_category ul li a::before {
+  content: "\f061";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "Font Awesome 6 Pro";
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--body-color) !important;
+  transition: 0.4s;
+}
+.sidebar_list_category ul li a:hover {
+  color: var(--text-white) !important;
+  border-color: var(--primary-color-1);
+  background: var(--primary-color-1);
+}
+.sidebar_list_category ul li a:hover::before {
+  color: var(--text-white) !important;
+}
+.sidebar_list_category ul li:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar_download ul {
+  padding: 0;
+  margin: 0;
+}
+.sidebar_download ul li {
+  list-style: none;
+}
+.sidebar_download ul li a {
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 10px;
+  background: var(--bg-white);
+  padding: 15px 20px;
+  border-radius: 6px;
+  justify-content: space-between;
+  color: var(--text-heading-color);
+  font-weight: 500;
+}
+.sidebar_download ul li a > div {
+  display: flex;
+  align-items: center;
+}
+.sidebar_download ul li a span {
+  float: right;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background: var(--primary-color-1);
+  text-align: center;
+  border-radius: 4px;
+  color: var(--text-white);
+}
+.sidebar_download ul li a i {
+  margin-right: 18px;
+  padding-right: 10px;
+  border-right: 1px solid var(--border-color-1);
+  color: var(--primary-color-1);
+  font-size: 25px;
+}
+.sidebar_download ul li a:hover {
+  color: var(--primary-color-1);
+}
+.sidebar_download ul li:last-child a {
+  margin: 0;
+}
+
+.sidebar_cta-help {
+  position: relative;
+  z-index: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 35px;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.sidebar_cta-help::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  background: var(--primary-color-1);
+  opacity: 0.8;
+}
+.sidebar_cta-help-icon {
+  margin-bottom: 35px;
+}
+.sidebar_cta-help-icon i {
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  display: inline-block;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background: var(--bg-white);
+  color: var(--primary-color-1);
+}
+.sidebar_cta-help h5 {
+  color: var(--text-white);
+  margin-bottom: 15px;
+}
+.sidebar_cta-help-contact-content span {
+  color: var(--text-white);
+  font-weight: 500;
+  display: inline-block;
+}
+.sidebar_cta-help-contact-content h6 a {
+  color: var(--text-white) !important;
+}/*# sourceMappingURL=block-style.css.map */
